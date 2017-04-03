@@ -1,27 +1,9 @@
-Welcome to the Glitch BETA
-=========================
+# choo-animals-starter
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+A starter app for the `your-first-choo-app` tutorial.
 
-Glitch is a developer playground that lets you code a real web-app without the slow setup and deployment steps.
+First, remix this Glitch app so you can start editing the code.
 
-[About Glitch](https://glitch.com/about)
+Once your new remix is open, select `index.js` in the left hand sidebar to get started.
 
-
-Your Project
-------------
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env`
-
-On the front-end,
-- edit `client.js`, `style.css` and `index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-
-Made by Fog Creek
------------------
-
-\ ゜o゜)ノ
+Make sure to follow the tutorial at [https://github.com/louiscenter/your-first-choo-app](https://github.com/louiscenter/your-first-choo-app)
