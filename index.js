@@ -5,4 +5,4 @@ var choo = require('choo')
 var app = choo()
 
 // start app
-app.mount('body')
+app.mount('div')
