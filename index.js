@@ -6,3 +6,4 @@ var app = choo()
 
 // start app
 app.mount('div')
+
