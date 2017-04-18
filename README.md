@@ -1,6 +1,6 @@
 # choo-animals-starter
 
-A starter app for the `your-first-choo-app` tutorial.
+A starter app for the `your-first-choo-app` guide.
 
 First, remix this Glitch app so you can start editing the code.
 
