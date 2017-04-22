@@ -10,5 +10,5 @@ Once your new remix is open, select `index.js` in the left hand sidebar to get s
 
 Make sure to follow the tutorial:
 
-[https://github.com/louiscenter/your-first-choo-app](https://github.com/louiscenter/your-first-choo-app)
+[https://handbook.choo.io/your-first-choo-app](https://handbook.choo.io/your-first-choo-app)
 
