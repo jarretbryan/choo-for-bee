@@ -1,13 +1,10 @@
-# choo-talking-animals-starter
+# choo-animals-starter
 
-🌐 Made by [@louiscenter](https://twitter.com/louiscenter) 🌐
-
-✨ A choo handbook starter app for the `Using input fields` guide ✨
+A starter app for the `your-first-choo-app` tutorial.
 
 First, remix this Glitch app so you can start editing the code.
 
 Once your new remix is open, select `index.js` in the left hand sidebar to get started.
 
-Make sure to follow the tutorial:
+Make sure to follow the tutorial at [https://github.com/louiscenter/your-first-choo-app](https://github.com/louiscenter/your-first-choo-app)
 
-[https://handbook.choo.io/using-input-fields](https://handbook.choo.io/using-input-fields)
