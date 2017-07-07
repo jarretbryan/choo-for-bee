@@ -1,7 +1,7 @@
 // import html helper
 var html = require('choo/html')
 
-// export function
+// export template
 module.exports = function (state, emit) {
   return html`
     <div class="container">
