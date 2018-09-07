@@ -51,6 +51,7 @@ app.use(function (state, emitter) {
 // creating a route (this is an api method)
 // app.route takes in two functions: the path, and then the template
 app.route('/', main)
+app.route('/filter/:type', main)
 
 // start app (?) (also an api method)
 app.mount('div')

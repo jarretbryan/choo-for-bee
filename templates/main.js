@@ -16,12 +16,29 @@ module.exports = function (state, emit) {
         <img src="/assets/bg.gif" onclick=${add} />
         ${state.animals.map(animalMap)}
       </div>
+      <div class="controls">
+        <ul class="filters">
+          <li><a href="/">all </a></li>
+          <li><a href="/filter/crocodile">crocodiles </a></li>
+          <li><a href="/filter/koala">koalas </a></li>
+          <li><a href="/filter/lion">lions </a></li>
+          <li><a href="/filter/tiger">tigers </a></li>
+          <li><a href="/filter/walrus">walruses </a></li>
+        </ul>
+      </div>
     </div>
   `
 
   // map function (???)
   function animalMap(obj, i){
-    return animal(remove, obj, i)
+    var type = state.params.type
+
+    if(type && type !==obj.type){
+      return null
+    } else {
+      return animal(remove, obj, i)
+    }
+
   }
 
 
