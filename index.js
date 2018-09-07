@@ -1,9 +1,6 @@
 // import choo
 const choo = require('choo')
 
-// 'html' is a template helper for choo
-const html = require('choo/html')
-
 // like in react for components
 // choo requires templates to be imported 
 // or since it's plain js - required
@@ -16,15 +13,25 @@ const app = choo()
 // app.use takes in a callback, and the callback takes in
 // a state object. we can then set state
 
-app.use(function(state, emitter){
-  // initializing state
+app.use(function (state, emitter) {
+  // initialize state
   state.animals = [
-    {type: 'walrus', x: 200, y: 100},
-    {type: 'crocodile', x: 50, y: 300}
+    { type: 'lion', x: 200, y: 100 },
+    { type: 'crocodile', x: 50, y: 300 }
   ]
-  
-  emitter.on('addAnimal', function () {
-    var obj = {type: 'lion', x: 100, y: 200}
+
+  // add animal
+  // this function is here, and main.js can access it if 'emit' is passed into the functional template
+  // we can then call emit on the first argument in emitter.on (in this case, 'addAnimal' and it will run the funciton)
+  emitter.on('addAnimal', function (coordObj) {
+    var animalArr = ['crocodile', 'koala', 'lion', 'tiger', 'walrus']
+
+    var randomIndex = Math.floor(Math.random() * animalArr.length)
+
+    var xValue = coordObj.x
+    var yValue = coordObj.y
+
+    var obj = { type: animalArr[randomIndex], x: xValue, y: yValue }
     state.animals.push(obj)
 
     emitter.emit('render')
