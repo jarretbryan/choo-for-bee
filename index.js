@@ -18,11 +18,10 @@ const app = choo()
 
 app.use(function(state){
   // initializing state
-  state.animals = {
-    type: 'walrus', 
-    x: 200, 
-    y:100 
-  }
+  state.animals = [
+    {type: 'lion', x: 200, y: 100},
+    {type: 'crocodile', x: 50, y: 300}
+  ]
 })
 
 
