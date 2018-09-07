@@ -16,12 +16,17 @@ const app = choo()
 // app.use takes in a callback, and the callback takes in
 // a state object. we can then set state
 
-app.use(function(state){
+app.use(function(state, emitter){
   // initializing state
   state.animals = [
     {type: 'lion', x: 200, y: 100},
     {type: 'crocodile', x: 50, y: 300}
   ]
+  
+  emitter.on('addAnimal', () => (
+    var obj = 
+  )
+  
 })
 
 
