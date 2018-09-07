@@ -9,6 +9,7 @@ module.exports = function (state) {
   var x = state.animals.x
   var y = state.animals.y
   // note - i wanted to use let above, but i kept getting an error, so var instead
+  // unsure if this is a quirk of glitch or of choo
 
   // create html template
   return html`
