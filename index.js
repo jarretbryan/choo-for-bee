@@ -23,10 +23,12 @@ app.use(function(state, emitter){
     {type: 'crocodile', x: 50, y: 300}
   ]
   
-  emitter.on('addAnimal', () => (
-    var obj = 
-  )
-  
+  emitter.on('addAnimal', function () {
+    var obj = {type: 'lion', x: 100, y: 200}
+    state.animals.push(obj)
+
+    emitter.emit('render')
+  })
 })
 
 
