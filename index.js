@@ -13,11 +13,14 @@ const main = require('./templates/main.js')
 // initialize choo
 const app = choo()
 
+app.use( function(state){
+  state.animals = {
+    type: 'lion', 
+    x: 200, 
+    y:100}
+  }
+)
 
-// creating a template (think functional component)
-// const main = function() {
-//   return html`<div>choo aminals</div>`
-// }
 
 // creating a route (this is an api method)
 // app.route takes in two functions: the path, and then the template
