@@ -1,5 +1,9 @@
 # choo-animals-starter
 
+
+Heavily annotated version of the choo-animals started
+I built most of it locally, isntead of on glitch
+
 A starter app for the `your-first-choo-app` tutorial.
 
 First, remix this Glitch app so you can start editing the code.

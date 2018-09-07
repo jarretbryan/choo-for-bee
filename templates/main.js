@@ -14,11 +14,18 @@ module.exports = function (state, emit) {
     <div class="container">
       <div class="grass">
         <img src="/assets/bg.gif" onclick=${add} />
-        ${state.animals.map(animal)}
+        ${state.animals.map(animalMap)}
       </div>
     </div>
   `
 
+  // map function (???)
+  function animalMap(obj, i){
+    return animal(remove, obj, i)
+  }
+
+
+  // add new animal to state
   function add (event){
     var x = event.offsetX - 20
     var y = event.offsetY - 10
@@ -26,6 +33,13 @@ module.exports = function (state, emit) {
     var newCoordinates = {x:x, y:y}
     emit('addAnimal', newCoordinates)
   }
+
+  // remove animal from state
+  function remove(event){
+    var index = event.target.id
+    emit('removeAnimal', index)
+  }
+
+
 }
 
-// add new animal to state

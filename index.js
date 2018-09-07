@@ -36,6 +36,15 @@ app.use(function (state, emitter) {
 
     emitter.emit('render')
   })
+
+  // remove animal
+  emitter.on('removeAnimal', function(i){
+    state.animals.splice(i,1)
+    emitter.emit('render')
+  })
+  // render has to be explicitly called
+
+
 })
 
 
