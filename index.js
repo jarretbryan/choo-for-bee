@@ -19,7 +19,7 @@ const app = choo()
 app.use(function(state, emitter){
   // initializing state
   state.animals = [
-    {type: 'lion', x: 200, y: 100},
+    {type: 'walrus', x: 200, y: 100},
     {type: 'crocodile', x: 50, y: 300}
   ]
   
