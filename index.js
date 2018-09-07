@@ -13,13 +13,17 @@ const main = require('./templates/main.js')
 // initialize choo
 const app = choo()
 
-app.use( function(state){
+// app.use takes in a callback, and the callback takes in
+// a state object. we can then set state
+
+app.use(function(state){
+  // initializing state
   state.animals = {
     type: 'lion', 
     x: 200, 
-    y:100}
+    y:100 
   }
-)
+})
 
 
 // creating a route (this is an api method)
