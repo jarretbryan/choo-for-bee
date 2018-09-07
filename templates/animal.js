@@ -7,7 +7,7 @@ module.exports = function (animal) {
   var x = animal.x
   var y = animal.y
   // note - i wanted to use let above, but i kept getting an error, so var instead
-  // unsure if this is a quirk of glitch or of choo
+  // seems to be a quirk of choo
 
   // create html template
   return html`
